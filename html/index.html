@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <base href="http://image.samanlehua.com/"/>
+    <title>第一部分</title>
+</head>
+<body>
+<a href="http://www.baidu.com" target="_blank">a标签 这是一段超链接文本</a>
+<hr color="#000000"/>
+<p>abbr标签 这是<abbr title="因为很黑所以叫小黑">小黑</abbr>的球球</p>
+<hr color="#000000"/>
+<div>
+    <p>
+    <address>address标签 我是小黑,是一名前端程序员。</address>
+    </p>
+</div>
+<hr color="#000000"/>
+<div>
+    <p> area标签与img标签配合使用 请点击第一第二名人物头像</p>
+    <img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=248992913,3798369301&fm=26&gp=0.jpg" border="0"
+         usemap="#planetmap" alt="planets"/>
+    <map name="planetmap" id="planetmap">
+        <area shape="circle" coords="50,70,35" alt="01" target="_blank"
+              href="http://image.samanlehua.com/file/userfiles/images/321348/1.jpg"/>
+        <area shape="circle" coords="120,75,37" alt="01" target="_blank"
+              href="http://photocdn.sohu.com/20131205/Img391326332.jpg"/>
+    </map>
+</div>
+<hr color="#000000"/>
+<div>
+    <article>
+        <h1>article标签</h1>
+        <p>
+            article 标签规定独立的自包含内容。
+            一篇文章应有其自身的意义，应该有可能独立于站点的其余部分对其进行分发。
+            article 元素的潜在来源：
+            论坛帖子 报纸文章 博客条目 用户评论
+        </p>
+    </article>
+</div>
+<hr color="#000000"/>
+<div>
+    <aside>
+        <h1>aside 标签</h1>
+        <p>aside 的内容可用作文章的侧栏。</p>
+    </aside>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>audio标签</h1>
+    <p>主要用于播放一段音频来使用</p>
+    <audio src="https://www.w3school.com.cn/i/horse.ogg" controls>
+        您的浏览器不支持 audio标签
+    </audio>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>base标签的应用</h1>
+    <a href="file/userfiles/images/321348/1.jpg">
+        相对路径，和base标签的路径拼接
+    </a>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>bod标签 反向输出</h1>
+    <bdo dir="rtl">我是反向输出的吗?</bdo>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>blockquote标签 </h1>
+    <p>普通文本
+        blockquote标签之间的所有文本都会从常规文本中分离出来，经常会在左、右两边进行缩进（增加外边距），而且有时会使用斜体。也就是说，块引用拥有它们自己的空间。
+    <blockquote>
+        人生若只如初见，何事秋风悲画扇。 —— 纳兰性德《木兰词·拟古决绝词柬友》
+    </blockquote>
+    </p>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>br 换行标签</h1>
+    <p>
+        李煜《虞美人·春花秋月何时了》<br>
+        问君能有几多愁？恰似一江春水向东流。
+    </p>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>button 标签</h1>
+    <button type="button">点我点我</button>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>canvas 标签</h1>
+    <p>可以绘制2d图形</p>
+    <canvas id="myCanvas"></canvas>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#FF0000';
+        ctx.fillRect(0, 0, 50, 50);
+    </script>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>cite 标签</h1>
+    <p>cite标签通常表示它所包含的文本对某个参考文献的引用，比如书籍或者杂志的标题。 按照惯例，引用的文本将以斜体显示。</p>
+    <cite>嘿小绿</cite>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>code 标签</h1>
+    <p>code标签用于表示计算机源代码或者其他机器可以阅读的文本内容。</p>
+    <cite>if True:
+        print('hello world')</cite>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>caption 标签</h1>
+    <p>caption 用作表格的标题 </p>
+    <table width="50%" border="1">
+        <caption>学生信息</caption>
+        <tr>
+            <td>姓名</td>
+            <td>年龄</td>
+            <td>性别</td>
+        </tr>
+        <tr>
+            <td>小黑</td>
+            <td>18</td>
+            <td>男</td>
+        </tr>
+        <tr>
+            <td>小黄</td>
+            <td>18</td>
+            <td>女</td>
+        </tr>
+    </table>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>datalist 标签</h1>
+    <input list="cars"/>
+    <datalist id="cars">
+        <option value="BWM"/>
+        <option value="FORD"/>
+        <option value="VOLVO"/>
+    </datalist>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>dl dd dt</h1>
+    <dl>
+        <dt>计算机</dt>
+        <dd>用来计算的的机器</dd>
+        <dt>屏幕</dt>
+        <dd>用来显示的机器</dd>
+    </dl>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>del 标签</h1>
+    <p>标记当前文本为删除样式</p>
+    <del>我被删除了🙂</del>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>details 标签</h1>
+    <details>
+        <summary>点击查看更多</summary>
+        <p>😁啥都米有</p>
+    </details>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>dialog 标签</h1>
+    <p>显示一个弹窗</p>
+    <dialog open>这是对话窗口</dialog>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>embed 标签</h1>
+    <p>定义嵌入的内容，比如插件。</p>
+    <embed src="https://www.w3school.com.cn/i/helloworld.swf"/>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>fieldset 标签</h1>
+    <form>
+        <fieldset>
+            <legend>信息</legend>
+            姓名:<input type="text">
+            体重:<input type="text">
+        </fieldset>
+    </form>
+    <p>如果表单周围没有边框，说明您的浏览器太老了。</p>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>figure,figcaption 标签 </h1>
+    <p>用作文档中插图的图像</p>
+    <figure>
+        <figcaption>初出茅庐，往往眼高手低，心高气傲，大事做不了，小事不愿做。不要养成挑三拣四的习惯。</figcaption>
+        <img width="200"
+             src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2234377092,497498487&fm=26&gp=0.jpg">
+        <p>不要雨天烦打伞，不带伞又怕淋雨，处处表现出不满的情绪。记住，不做则已，要做就要做好。</p>
+    </figure>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>footer 标签</h1>
+    <p>文档中的页脚部分</p>
+    <footer>
+        <p>众里寻他千百度</p>
+        <p>百度: <a href="http://www.baidu.com">www.baidu.com</a>.</p>
+    </footer>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>
+        <del>frameset</del>
+        ,
+        <del>frame</del>
+        标签 不推荐使用已过时 推荐div+iframe 实现
+    </h1>
+    <p>实现窗体的嵌套效果 标签定义 frameset 中的一个特定的窗口（框架）</p>
+    <frameset cols="25%,50%,25%">
+        <frame src="tips.html">
+        <frame src="tips.html">
+        <frame src="tips.html">
+    </frameset>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>i 标签</h1>
+    <p>i标签显示斜体文本效果。</p>
+    <i>黑发不知勤学早，白首方悔读书迟。 —— 颜真卿《劝学诗》</i>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>iframe</h1>
+    <p>iframe 元素会创建包含另外一个文档的内联框架（即行内框架）。</p>
+    <div>
+        <iframe src="tips.html">页面加载失败</iframe>
+        <iframe src="make_up.html">页面加载失败</iframe>
+    </div>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>ins 标签</h1>
+    <p>新插入部分的文本,类似于del标签不过横线在下面</p>
+    <ins>我下面有线条?</ins>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>label 标签</h1>
+    <form>
+        <label for="male">Male</label>
+        <input type="radio" name="sex" id="male"/>
+        <br/>
+        <label for="female">Female</label>
+        <input type="radio" name="sex" id="female"/>
+    </form>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>ol ul li 标签 有序列表和无序列表</h1>
+    <p>有序列表和无序列表</p>
+    <h2>有序列表</h2>
+    <ol>
+        <li>我是1</li>
+        <li>我是2</li>
+        <li>我是3</li>
+    </ol>
+    <h2>无序列表</h2>
+    <ul>
+        <li>我是小何</li>
+        <li>我是小花</li>
+        <li>我是小紫</li>
+    </ul>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>link 标签</h1>
+    <p>引入外部样式表</p>
+</div>
+<hr color="#000000"/>
+<a href="index_2.html" target="_blank">跳转到第二部分</a>
+</body>
+</html>
