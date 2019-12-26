@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        li, strong {
+            color: aquamarine;
+        }
+
+        /*方式一只匹配当前ID*/
+        #style_p {
+            color: coral;
+        }
+
+        /*方式二匹配当前ID以及P标签
+        #style_p p{
+            color: coral;
+        }*/
+
+        /*方式一只匹配当前CLASS*/
+        .style_p2 {
+            color: crimson;
+        }
+
+        /*方式二匹配当前CLASS以及P标签
+        .style_p2 p{
+            color: coral;
+        }*/
+
+        [title=tit] {
+            color: goldenrod;
+        }
+
+        [align] {
+            color: lawngreen;
+        }
+
+        .inherit {
+            color: #955fff;
+            font-style: italic;
+        }
+
+        .independent {
+            color: #4bff2f
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>选择器</h1>
+    <p>选择器的分组</p>
+    <li>我是li</li>
+    <strong>我是strong</strong>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>id选择器</h1>
+    <p>id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。</p>
+    <p id="style_p">我是一个么得感情的p标签</p>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>class选择器</h1>
+    <p>class 选择器可以为标有特定 class 的 HTML 元素指定特定的样式。</p>
+    <p class="style_p2">我是一个么得感情的p标签</p>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>属性选择器</h1>
+    <p>可以为拥有指定属性的 HTML 元素设置样式，而不仅限于 class 和 id 属性。</p>
+    <p title="tit">我是一个么得感情的p标签</p>
+    <p align="left">我是第二个么得感情的p标签</p>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>继承</h1>
+    <p>子标签会继承父标签的属性 子标签可以有自己的属性来重写（我认为这属于重写操作）父标签的属性</p>
+    <div class="inherit">
+        我是父类
+        <p>我继承父类的属性</p>
+        <p class="independent">我不继承父类字体颜色的属性</p>
+    </div>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>如何插入样式</h1>
+    <ul>
+        <li style="color: rgba(255,22,64,0.85)">
+            外部样式表
+        </li>
+        <li style="color: rgba(255,22,64,0.85)">
+            内部样式表
+        </li>
+        <li style="color: rgba(255,22,64,0.85)">
+            内联样式
+        </li>
+    </ul>
+</div>
+</body>
+</html>

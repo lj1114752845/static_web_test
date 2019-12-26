@@ -2,8 +2,8 @@
 <html lang="ch">
 <head>
     <meta charset="UTF-8">
-    <base href="http://image.samanlehua.com/"/>
     <title>第一部分</title>
+    <!--    <base href="http://image.samanlehua.com/"/>-->
 </head>
 <body>
 <a href="http://www.baidu.com" target="_blank">a标签 这是一段超链接文本</a>
@@ -53,10 +53,15 @@
     <audio src="https://www.w3school.com.cn/i/horse.ogg" controls>
         您的浏览器不支持 audio标签
     </audio>
+    <audio controls>
+        <source src="https://www.w3school.com.cn/i/horse.ogg" type="audio/ogg"/>
+        <source src="https://www.w3school.com.cn/i/horse.mp3" type="audio/mp3"/>
+    </audio>
 </div>
 <hr color="#000000"/>
 <div>
     <h1>base标签的应用</h1>
+    <p>在head 内部使用建议慎用 因为会影响到当前页面全局的相对路径 当前页面base标签已经注释</p>
     <a href="file/userfiles/images/321348/1.jpg">
         相对路径，和base标签的路径拼接
     </a>
@@ -116,15 +121,18 @@
 </div>
 <hr color="#000000"/>
 <div>
-    <h1>caption 标签</h1>
-    <p>caption 用作表格的标题 </p>
+    <h1>table caption thead tfoot tbody tr td标签</h1>
+    <p>table 表格 caption 表头 thead 表头内容 tbody 主体内容 tfoot 表底内容 tr行 td列</p>
     <table width="50%" border="1">
         <caption>学生信息</caption>
+        <thead>
         <tr>
             <td>姓名</td>
             <td>年龄</td>
             <td>性别</td>
         </tr>
+        </thead>
+        <tbody>
         <tr>
             <td>小黑</td>
             <td>18</td>
@@ -135,6 +143,14 @@
             <td>18</td>
             <td>女</td>
         </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td>name</td>
+            <td>age</td>
+            <td>sex</td>
+        </tr>
+        </tfoot>
     </table>
 </div>
 <hr color="#000000"/>
@@ -165,7 +181,7 @@
 </div>
 <hr color="#000000"/>
 <div>
-    <h1>details 标签</h1>
+    <h1>details summary 标签</h1>
     <details>
         <summary>点击查看更多</summary>
         <p>😁啥都米有</p>

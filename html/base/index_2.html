@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>第二部分</title>
+</head>
+<body>
+<div>
+    <h1>main 标签</h1>
+    <p>元素中的内容对于文档来说应当是唯一的。它不应包含在文档中重复出现的内容，比如侧栏、导航栏、版权信息、站点标志或搜索表单。</p>
+    <main>
+        <strong>Web Browsers</strong>
+        <p>Google Chrome、Firefox 以及 Internet Explorer 是目前最流行的浏览器。</p>
+
+        <article>
+            <strong>Google Chrome</strong>
+            <p>Google Chrome 是由 Google 开发的一款免费的开源 web 浏览器，于 2008 年发布。</p>
+        </article>
+
+        <article>
+            <strong>Internet Explorer</strong>
+            <p>Internet Explorer 由微软开发的一款免费的 web 浏览器，发布于 1995 年。</p>
+        </article>
+
+        <article>
+            <strong>Mozilla Firefox</strong>
+            <p>Firefox 是一款来自 Mozilla 的免费开源 web 浏览器，发布于 2004 年。</p>
+        </article>
+    </main>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>mark 标签</h1>
+    <p>突出显示部分文本</p>
+    <p>山有木兮木有枝，心悦君兮君不知。
+        <mark style="background: #39ff77">佚名《越人歌》</mark>
+    </p>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>menu 标签</h1>
+    <p>标签用于上下文菜单、工具栏以及用于列出表单控件和命令。</p>
+    <menu>
+        <li>菜单1</li>
+        <li>菜单2</li>
+        <li>菜单3</li>
+    </menu>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>meter 标签</h1>
+    <p>标签定义已知范围或分数值内的标量测量。也被称为 gauge（尺度）。 磁盘用量、查询结果的相关性，等等。</p>
+    <meter value="5" min="0" max="10"/>
+    <meter value="5" min="0" max="20"/>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>nav 标签</h1>
+    <p>标签定义导航链接的部分。</p>
+    <nav>
+        <a href="tips.html">tips.html</a>
+        <a href="make_up.html">make_up.html</a>
+    </nav>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>select optgroup option 标签</h1>
+    <p>元素可创建单选或多选菜单。</p>
+    <ul>
+        <li>
+            <select>
+                <optgroup label="一组">
+                    <option>小花1</option>
+                    <option>小红1</option>
+                </optgroup>
+                <optgroup label="二组">
+                    <option>小花2</option>
+                    <option>小红2</option>
+                </optgroup>
+            </select>
+        </li>
+        <li>
+            <select>
+                <option>小白</option>
+                <option>小黑</option>
+                <option>小绿</option>
+            </select>
+        </li>
+    </ul>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>output 标签</h1>
+    <p>定义不同类型的输出，比如脚本的输出。</p>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+        <input type="range" id="a" value="50">100
+        +<input type="number" id="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+    </form>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>pre 标签</h1>
+    <p>元素可定义预格式化的文本。被包围在 pre 元素中的文本通常会保留空格和换行符。 而文本也会呈现为等宽字体。</p>
+    <pre>元素可定义预格式化的文本。被包围在 pre 元素中的文本通常会保留空格和换行符。       而文本也会呈现为等宽字体。</pre>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>progress</h1>
+    <p> 标签标示任务的进度（进程）。</p>
+    <progress max="100" value="30">下载中</progress>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>q 标签</h1>
+    <p>标签定义短的引用,浏览器经常在引用的内容周围添加引号。 q 标签在本质上与 blockquote 是一样的。不同之处在于它们的显示和应用。q
+        标签用于简短的行内引用。如果需要从周围内容分离出来比较长的部分（通常显示为缩进的块），请使用 blockquote 标签。
+    </p>
+    <q>Here is a short quotation here is a short quotation</q>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>ruby rt rp 标签</h1>
+    <p>ruby 元素由一个或多个字符（需要一个解释/发音）和一个提供该信息的 rt 元素组成，还包括可选的 rp 元素，定义当浏览器不支持 "ruby" 元素时显示的内容。</p>
+    <ruby>面
+        <rt>mian</rt>
+        <rp>不支持ruby</rp>
+    </ruby>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>section 标签</h1>
+    <p>标签定义文档中的节（section、区段）。比如章节、页眉、页脚或文档中的其他部分。</p>
+    <section>
+        <h1>卜算子·我住长江头</h1>
+        <p>
+            我住长江头，君住长江尾。日日思君不见君，共饮长江水。<br/>
+            此水几时休，此恨何时已。只愿君心似我心，定不负相思意。
+        </p>
+    </section>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>small 标签</h1>
+    <p>标签呈现小号字体效果。</p>
+    <small>标签呈现小号字体效果。</small>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>span 标签</h1>
+    <p>如果不对 span 应用样式，那么 span 元素中的文本与其他文本不会任何视觉上的差异。尽管如此，上例中的 span 元素仍然为 p 元素增加了额外的结构。
+
+        可以为 span 应用 id 或 class 属性，<span style="color: #db32ff">这样既可以增加适当的语义，又便于对 span 应用样式。</span></p>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>sub 标签</h1>
+    <p>标签可定义下标文本。 包含在 sub 标签和其结束标签 /sub 中的内容将会以当前文本流中字符高度的一半来显示，但是与当前文本流中文字的字体和字号都是一样的。</p>
+    <p>标签可定义下标文本。 包含在 <sub> 标签和其结束标签 </sub> 中的内容将会以当前文本流中字符高度的一半来显示，但是与当前文本流中文字的字体和字号都是一样的。</p>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>sup 标签</h1>
+    <p>标签可定义上标文本。 包含在 sup 标签和其结束标签 /sup 中的内容将会以当前文本流中字符高度的一半来显示，但是与当前文本流中文字的字体和字号都是一样的。</p>
+    <p> 标签可定义上标文本。 包含在 <sup> 标签和其结束标签 </sup> 中的内容将会以当前文本流中字符高度的一半来显示，但是与当前文本流中文字的字体和字号都是一样的。</p>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>textarea 标签</h1>
+    <p>定义多行的文本输入控件。</p>
+    <textarea rows="3" cols="80">追忆少年锦时,夜·路灯,空中阁楼,海角天涯，智者有敬,静依时光，浅念流年,新媳妇过河,我的真情，怎能掩饰,情，为何物？沙漠中的玫瑰，自我世界的海洋,一片叶子的旅行,故乡涧湾,冬日的雾</textarea>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>time 标签</h1>
+    <p>今天是
+        <time datetime="2019-12-26">小绿生日</time>
+        哦
+    </p>
+</div>
+<hr color="#000000"/>
+<div>
+    <u>u 标签</u>
+    <p> 标签可定义下划线文本。 避免使用</p>
+    <u>我不是超链接</u>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>video 标签</h1>
+    <p>定义视频，比如电影片段或其他视频流。</p>
+    <video src="https://www.w3school.com.cn/i/movie.ogg" controls="controls"></video>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>wbr 标签</h1>
+    <p>Word Break Opportunity (wbr) 规定在文本中的何处适合添加换行符。</p>
+    <p>自古圣贤尽贫贱，
+        <wbr>
+        何况我辈孤且直！
+        <wbr>
+        ------
+    </p>
+</div>
+</body>
+</html>
