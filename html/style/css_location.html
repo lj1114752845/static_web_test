@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS定位</title>
+    <style>
+        .div_relative_1, .div_relative_2, .div_relative_3 {
+            width: 80px;
+            height: 80px;
+            background-color: #ff1ff4;
+            margin-top: 10px;
+        }
+
+        .div_relative_1 {
+            position: relative; /*相对定位*/
+            left: 20px;
+        }
+
+        .div_relative_2 {
+            position: relative;
+            right: -50px;
+        }
+
+        .div_relative_3 {
+            position: relative;
+            top: -20px;
+        }
+    </style>
+
+    <style>
+        .div_absolutely_1, .div_absolutely_2, .div_absolutely_3 {
+            height: 80px;
+            width: 100%;
+        }
+
+        .div_absolutely_4, .div_absolutely_5 {
+            height: 50px;
+            width: 50px;
+        }
+
+        .div_absolutely_1 {
+            background-color: #ff848a;
+        }
+
+        .div_absolutely_2 {
+            background-color: #ec91ff;
+        }
+
+        .div_absolutely_3 {
+            height: 300px;
+            width: 500px;
+            position: relative;
+            background-color: #fffb8f;
+        }
+
+        .div_absolutely_4 {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            background-color: #adffab;
+        }
+
+        .div_absolutely_5 {
+            position: absolute;
+            top: 100px;
+            left: 200px;
+            background-color: #9bfffd;
+        }
+
+        .div_absolutely_6 {
+            height: 100px;
+            width: 200px;
+            position: absolute;
+            top: 100px;
+            left: 200px;
+            background-color: #bebbff;
+        }
+
+        .div_float_1, .div_float_2, .div_float_3 {
+            float: left;
+        }
+
+        .div_float_1, .div_float_2, .div_float_3 {
+            margin: 5px;
+            text-align: center;
+            vertical-align: center;
+            background-color: #f881ff;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>相对定位</h1>
+    <p>设置为相对定位的元素框会偏移某个距离。元素仍然保持其未定位前的形状，它原本所占的空间仍保留。</p>
+    <div class="div_relative_1">
+        第一个<br>
+        相对左偏移20px
+    </div>
+    <div class="div_relative_2">
+        第二个<br>
+        相对右偏移 -50px
+    </div>
+    <div class="div_relative_3">
+        第三个<br>
+        相对上偏移 -20px
+    </div>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>绝对定位</h1>
+    <p>
+        设置为绝对定位的元素框从文档流完全删除，并相对于其包含块定位，包含块可能是文档中的另一个元素或者是初始包含块。元素原先在正常文档流中所占的空间会关闭，就好像该元素原来不存在一样。元素定位后生成一个块级框，而不论原来它在正常流中生成何种类型的框。</p>
+    <p>如果标签设置绝对定位 他的父级没有设置定位信息 子标签会一直向上寻找拥有定位信息的父标签，一直寻找到顶部</p>
+    <div class="div_absolutely_1">d1</div>
+    <div class="div_absolutely_2">d2</div>
+    <div class="div_absolutely_3">d3
+        <div class="div_absolutely_4">
+            d4
+            <div class="div_absolutely_5">
+                d5
+            </div>
+        </div>
+    </div>
+    <div class="div_absolutely_6">我的父级没有定位信息所以我向上级寻找</div>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>浮动</h1>
+    <p>浮动的框可以向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。 由于浮动框不在文档的普通流中，所以文档的普通流中的块框表现得就像浮动框不存在一样。</p>
+    <div>
+        <div class="div_float_1">f1</div>
+        <div class="div_float_2">f2</div>
+        <div class="div_float_3">f3</div>
+    </div>
+</div>
+</body>
+</html>

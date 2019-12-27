@@ -47,6 +47,91 @@
         .a_1 {
             text-decoration: none;
         }
+
+        .p_family {
+            font-family: "Times New Roman", "sans-serif"; /*列出多种字体用逗号拼接  系统依次寻找 第一个没有拿第二个以此类推*/
+        }
+
+        .p_style {
+            font-style: italic;
+        }
+
+        .p_variant {
+            font-variant: small-caps;
+        }
+
+        .p_weight {
+            font-weight: 900;
+        }
+
+        .p_size {
+            font-size: 2em;
+        }
+
+        .a_http:link {
+            color: rgba(255, 27, 233, 0.85);
+        }
+
+        .a_http:visited {
+            color: rgba(255, 28, 8, 0.85);
+        }
+
+        .a_http:hover {
+            color: #05fffd;
+            text-decoration: none; /*去掉下划线*/
+        }
+
+        .a_http:active {
+            color: #00ff0d;
+            text-decoration: none; /*去掉下划线*/
+        }
+
+        .a_http {
+            background-color: #888888;
+        }
+
+        ul {
+            list-style: lower-roman inside url("https://www.w3school.com.cn/i/eg_arrow.gif");
+        }
+
+        /*ul {*/
+        /*    list-style-type: lower-roman;*/
+        /*    list-style-image: url("https://www.w3school.com.cn/i/eg_arrow.gif");*/
+        /*    list-style-position: inside;*/
+        /*}*/
+
+        table, td, th {
+            border: 1px solid #000; /*设置边框宽度 样式 颜色*/
+            border-collapse: collapse; /*改为单边框*/
+        }
+
+        caption {
+            text-align: center;
+            border-radius: 2px;
+            background-color: #955fff;
+            margin-bottom: 10px;
+        }
+
+        table {
+            caption-side: top;
+            width: 50%;
+            text-align: center; /*设置字体水平居中*/
+            vertical-align: center; /*设置水平居中*/
+        }
+
+        th {
+            background-color: #fffaa3;
+            height: 50px;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        .p_outline {
+            border: #ff1012 solid 1px;
+            outline: #f10fff dotted 1px;
+        }
     </style>
 </head>
 <body>
@@ -63,10 +148,78 @@
         （我是一个正常缩进的P标签还居中了）诗歌分为古体诗和近体诗。古体诗最早的形式是四言古诗。醇厚古朴，简质典雅，主要在春秋战国时期。之后发展为五言古诗，主要为汉乐府诗。之后就是七言古诗了，而它的创始人是曹丕。在此之后就进入到近体诗了。最早是五言侓诗，之后出现了七言律诗、五言绝句和七言绝句。总体评价的话，古体诗比较自由随性，而近体诗尤其到唐宋时代，格律平仄则是很重要的一点。唐诗宋词作为近体诗的代表，值得我们细细品味。（详情可见文章《中国诗歌艺术研究》。）</p>
     <p class="p_2">
         （我是一个不正常缩进的P标签还居中了）诗歌分为古体诗和近体诗。古体诗最早的形式是四言古诗。醇厚古朴，简质典雅，主要在春秋战国时期。之后发展为五言古诗，主要为汉乐府诗。之后就是七言古诗了，而它的创始人是曹丕。在此之后就进入到近体诗了。最早是五言侓诗，之后出现了七言律诗、五言绝句和七言绝句。总体评价的话，古体诗比较自由随性，而近体诗尤其到唐宋时代，格律平仄则是很重要的一点。唐诗宋词作为近体诗的代表，值得我们细细品味。（详情可见文章《中国诗歌艺术研究》。）</p>
-    <p class="p_en1"> comment plate salary      incorrect act cliff credit northwest partial direct </p>
-    <p class="p_en2"> comment plate salary      incorrect act cliff credit northwest partial direct </p>
+    <p class="p_en1"> comment plate salary incorrect act cliff credit northwest partial direct </p>
+    <p class="p_en2"> comment plate salary incorrect act cliff credit northwest partial direct </p>
     <a class="a_1" target="_blank" href="http://wwww.baidu.com">我是一个被去掉下划线的超链接 嘤嘤嘤</a>
-
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>字体</h1>
+    <p>CSS 字体属性定义文本的字体系列、大小、加粗、风格（如斜体）和变形（如小型大写字母）。</p>
+    <p class="p_family">(使用字体sans-serif) comment plate salary incorrect act cliff credit northwest partial direct </p>
+    <p class="p_style">逐渐倾斜emmmmmm</p>
+    <p class="p_variant">特殊显示英文Gradual deformation</p>
+    <p class="p_weight">我是不是比他们粗</p>
+    <p class="p_size">我字号比他们大(2em)</p>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>链接</h1>
+    <p>能够设置链接样式的 CSS 属性有很多种（例如 color, font-family, background 等等）。 链接的特殊性在于能够根据它们所处的状态来设置它们的样式。</p>
+    <a class="a_http" href="http:www.baidu.com">标签逐渐变色</a>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>列表</h1>
+    <p>列表属性允许你放置、改变列表项标志，或者将图像作为列表项标志。</p>
+    <ul>
+        <li>我是第一名</li>
+        <li>我是第二名</li>
+        <li>我是第三名</li>
+    </ul>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>表格</h1>
+    <p> CSS 表格属性可以帮助您极大地改善表格的外观。</p>
+    <table>
+        <caption>学生表</caption>
+        <thead>
+        <tr>
+            <th>名字</th>
+            <th>年龄</th>
+            <th>性别</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>小红</td>
+            <td>19</td>
+            <td>女</td>
+        </tr>
+        <tr>
+            <td>小灰</td>
+            <td>18</td>
+            <td>男</td>
+        </tr>
+        <tr>
+            <td>小率</td>
+            <td>18</td>
+            <td>女</td>
+        </tr>
+        <tr>
+            <td>小王</td>
+            <td>20</td>
+            <td>男</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<hr color="#000000"/>
+<div>
+    <h1>轮廓 推荐使用h5阴影</h1>
+    <p>轮廓（outline）是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用。 CSS outline 属性规定元素轮廓的样式、颜色和宽度。</p>
+    <p class="p_outline">我是一个么得感情的P标签</p>
 </div>
 </body>
 </html>

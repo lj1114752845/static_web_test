@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS盒子模型</title>
+    <style>
+        .div_1 {
+            background-color: #db32ff;
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        .div_2 {
+            width: 80px;
+            height: 80px;
+            background-color: goldenrod;
+            margin-top: 10px;
+        }
+
+        .div_3 {
+            width: 80px;
+            height: 80px;
+            background-color: goldenrod;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>内边距,外边距，边框，外边距合并</h1>
+    <p>两个盒子的外边距相接的时 只取最大的不会合并</p>
+    <div class="div_1">
+        我的下边距设置的是 10px
+    </div>
+    <div class="div_2">
+        我的上边距设置的是 10px
+    </div>
+    <div class="div_3">
+        我的上边距设置的是 20px
+    </div>
+</div>
+</body>
+</html>
