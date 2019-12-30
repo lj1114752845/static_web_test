@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 选择器</title>
+    <style>
+        h2 {
+            font-size: 1.3em;
+        }
+    </style>
+    <style type="text/css">
+        a:link {
+            color: #FF0000
+        }
+
+        a:visited {
+            color: #00FF00
+        }
+
+        a:hover {
+            color: #FF00FF
+        }
+
+        a:active {
+            color: #0000FF
+        }
+    </style>
+
+    <style type="text/css">
+        a.one:link {
+            color: #ff0000
+        }
+
+        a.one:visited {
+            color: #0000ff
+        }
+
+        a.one:hover {
+            color: #ffcc00
+        }
+
+        a.two:link {
+            color: #ff0000
+        }
+
+        a.two:visited {
+            color: #0000ff
+        }
+
+        a.two:hover {
+            font-size: 150%
+        }
+
+        a.three:link {
+            color: #ff0000
+        }
+
+        a.three:visited {
+            color: #0000ff
+        }
+
+        a.three:hover {
+            background: #66ff66
+        }
+
+        a.four:link {
+            color: #ff0000
+        }
+
+        a.four:visited {
+            color: #0000ff
+        }
+
+        a.four:hover {
+            font-family: monospace
+        }
+
+        a.five:link {
+            color: #ff0000;
+            text-decoration: none
+        }
+
+        a.five:visited {
+            color: #0000ff;
+            text-decoration: none
+        }
+
+        a.five:hover {
+            text-decoration: underline
+        }
+    </style>
+
+
+    <style type="text/css">
+        input:focus {
+            background-color: yellow;
+        }
+    </style>
+
+    <style type="text/css">
+        p.p_1:first-child {
+            font-weight: bold;
+        }
+
+        li.li_1:first-child {
+            text-transform: uppercase;
+        }
+    </style>
+
+
+    <style type="text/css">
+        q:lang(no) {
+            quotes: "~" "~";
+        }
+    </style>
+
+    <style type="text/css">
+        p.first_line_one:first-line {
+            color: #ff0000;
+            font-variant: small-caps;
+        }
+    </style>
+
+    <style type="text/css">
+        p.first_line_two:first-letter {
+            color: #ff0000;
+            font-size: xx-large
+        }
+    </style>
+
+    <style type="text/css">
+        p.p_2:before {
+            content: url(https://www.w3school.com.cn/i/w3school_logo_white.gif)
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>CSS 伪类</h1>
+    <p>CSS 伪类用于向某些选择器添加特殊的效果。</p>
+    <div>
+        <h2>本例演示如何向文档中的超链接添加不同的颜色。</h2>
+        <p><b><a href="/index.html" target="_blank">这是一个链接。</a></b></p>
+        <p><b>注释：</b>在 CSS 定义中，a:hover 必须位于 a:link 和 a:visited 之后，这样才能生效！</p>
+        <p><b>注释：</b>在 CSS 定义中，a:active 必须位于 a:hover 之后，这样才能生效！</p>
+    </div>
+
+    <div>
+        <h2>本例演示如何向超链接添加其他样式。</h2>
+        <p><b><a class="one" href="/index.html" target="_blank">这个链接改变颜色</a></b></p>
+        <p><b><a class="two" href="/index.html" target="_blank">这个链接改变字体大小</a></b></p>
+        <p><b><a class="three" href="/index.html" target="_blank">这个链接改变背景颜色</a></b></p>
+        <p><b><a class="four" href="/index.html" target="_blank">这个链接改变字体系列</a></b></p>
+        <p><b><a class="five" href="/index.html" target="_blank">这个链接改变文本装饰</a></b></p>
+    </div>
+
+    <div>
+        <h2>本例演示如何对超链接应用 :focus 伪类（无法在 IE 中工作）。</h2>
+        <form action="" method="get">
+            First name: <input type="text" name="fname"/><br/>
+            Last name: <input type="text" name="lname"/><br/>
+            <input type="submit" value="Submit"/>
+        </form>
+        <p><b>注释：</b>如果已规定 !DOCTYPE，那么 Internet Explorer 8 （以及更高版本）支持 :focus 伪类。</p>
+    </div>
+
+    <div>
+        <h2>本例演示 :first-child 伪类的用法。</h2>
+        <p class="p_1">These are the necessary steps:</p>
+        <ul>
+            <li class="li_1">Intert Key</li>
+            <li class="li_1">Turn key <strong>clockwise</strong></li>
+            <li class="li_1">Push accelerator</li>
+        </ul>
+        <p class="p_1">Do <em>not</em> push the brake at the same time as the accelerator.</p>
+        <p><b>注释：</b>必须声明 DOCTYPE，这样 :first-child 才能在 IE 中生效。</p>
+    </div>
+    <div>
+        <h2>本例演示 :lang 伪类的用法。</h2>
+        <p>:lang 伪类允许您为不同的语言定义特殊的规则。在下面的例子中，在下面的例子中，:lang 类为带有值为 "no" 的 lang 属性的 q 元素定义引号的类型：</p>
+
+        <p>一些文本 <q lang="no">段落中的引用</q> 一些文本。</p>
+    </div>
+</div>
+<div>
+    <h1>CSS 伪元素</h1>
+    <p>CSS 伪元素用于向某些选择器设置特殊效果。</p>
+    <div>
+        <h2>"first-line" 伪元素用于向文本的首行设置特殊样式。</h2>
+        <p class="first_line_one">You can use the :first-line pseudo-element to add a special effect to the <br> first
+            line
+            of a text!</p>
+    </div>
+    <div>
+        <h2>"first-letter" 伪元素用于向文本的首字母设置特殊样式：</h2>
+        <p class="first_line_two">You can use the :first-letter pseudo-element to add a special effect to the first
+            letter of a text!</p>
+    </div>
+    <div>
+        <h2>":before" 伪元素可以在元素的内容前面插入新内容。</h2>
+        <p class="p_2">我前面好像插入了奇怪的东西</p>
+    </div>
+
+</div>
+</body>
+</html>

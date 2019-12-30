@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 高级</title>
+    <style>
+
+        p.p_1 {
+            width: fit-content;
+            margin: auto;
+            background-color: #955fff;
+        }
+
+        div.d_1 {
+            width: fit-content;
+            margin: auto;
+            background-color: #bebbff;
+        }
+
+        p.p_2 {
+            float: right;
+            background-color: goldenrod;
+        }
+
+        table {
+            width: 50%;
+        }
+
+        table, tr, td {
+            border: #bebbff 1px solid;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            text-align: left;
+            padding: 8px;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-style: oblique;
+            display: table;
+        }
+
+        thead {
+            background-color: #888888;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>CSS 对齐</h1>
+    <p>在 CSS 中，可以使用多种属性来水平对齐元素。</p>
+    <div class="div_content">
+        <h2>使用 margin 属性来水平对齐</h2>
+        <p class="p_1">慈恩塔下题名处，十七人中最少年。</p>
+        <p class="p_1">慈恩塔下题名处，十七人中最少年。</p>
+    </div>
+    <div class="div_content">
+        <h2>使用 position 属性进行左和右对齐</h2>
+        <div class="d_1">
+            <p>慈恩塔下题名处，十七人中最少年。</p>
+            <p>慈恩塔下题名处，十七人中最少年。</p>
+        </div>
+    </div>
+    <div class="div_content">
+        <h2>使用 float 属性来进行左和右对齐</h2>
+        <p class="p_2">慈恩塔下题名处，十七人中最少年。</p>
+        <p class="p_2">慈恩塔下题名处，十七人中最少年。</p>
+    </div>
+</div>
+<div>
+    <h1>css 尺寸</h1>
+    <table>
+        <caption>CSS 尺寸属性</caption>
+        <thead>
+        <tr>
+            <th>属性</th>
+            <th>描述</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>height</td>
+            <td> 设置元素的高度。</td>
+        </tr>
+        <tr>
+            <td>line-height</td>
+            <td> 设置行高。</td>
+        </tr>
+        <tr>
+            <td>max-height</td>
+            <td> 设置元素的最大高度。</td>
+        </tr>
+        <tr>
+            <td>max-width</td>
+            <td> 设置元素的最大宽度。</td>
+        </tr>
+        <tr>
+            <td>min-height</td>
+            <td> 设置元素的最小高度。</td>
+        </tr>
+        <tr>
+            <td>min-width</td>
+            <td>设置元素的最小宽度。</td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td>设置元素的宽度。</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div>
+    <h1>CSS 分类</h1>
+    <table>
+        <caption>CSS 分类属性</caption>
+        <thead>
+        <tr>
+            <th>属性</th>
+            <th>描述</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>clear</td>
+            <td> 设置一个元素的侧面是否允许其他的浮动元素。</td>
+        </tr>
+        <tr>
+            <td>cursor</td>
+            <td> 规定当指向某元素之上时显示的指针类型。</td>
+        </tr>
+        <tr>
+            <td>display</td>
+            <td> 设置是否及如何显示元素。</td>
+        </tr>
+        <tr>
+            <td>float</td>
+            <td> 定义元素在哪个方向浮动。</td>
+        </tr>
+        <tr>
+            <td>position</td>
+            <td>把元素放置到一个静态的、相对的、绝对的、或固定的位置中。</td>
+        </tr>
+        <tr>
+            <td>visibility</td>
+            <td>设置元素是否可见或不可见。</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
