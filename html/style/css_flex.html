@@ -1,36 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ch">
 <head>
     <meta charset="UTF-8">
     <title>flex 布局</title>
     <style>
-        .content {
+        .content_1 {
+            width: 1000px;
+            height: 100px;
             display: flex;
         }
 
-        .one, .two, .three {
-            width: 100px;
-            height: 100px;
+        .one_1, .two_1, .three_1 {
+            background-color: #bebbff;
+            border: 1px solid #ff0000;
+            flex: 1;
         }
 
-        .one {
-            background-color: #00ff0d;
-        }
 
-        .two {
-            background-color: #955fff;
-        }
-
-        .three {
-            background-color: #888888;
-        }
     </style>
 </head>
 <body>
-<div class="content">
-    <div class="one"></div>
-    <div class="two"></div>
-    <div class="three"></div>
+<div>
+    <h1>CSS flex</h1>
+    <p>让所有弹性盒模型对象的子元素都有相同的长度，且忽略它们内部的内容：</p>
+    <div class="content_1">
+        <div class="one_1">one</div>
+        <div class="two_1">two</div>
+        <div class="three_1">three</div>
+    </div>
 </div>
 </body>
 </html>

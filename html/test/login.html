@@ -5,7 +5,6 @@
     <title>登录</title>
     <style>
         html, body {
-            overflow: scroll;
             width: 100%;
             height: 100%;
             margin: 0;
@@ -13,35 +12,159 @@
         }
 
         .header_title {
-            height: 10%;
+            height: 15%;
             width: 100%;
+            box-sizing: border-box;
+        }
+
+
+        .content {
+            padding-top: 10%;
+            margin-left: 5%;
+            height: 65%;
+            width: 90%;
+            box-sizing: border-box;
+        }
+
+        .ret {
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            width: 5%;
+        }
+
+        .page_name {
+            margin: 0px;
+            padding: 0px;
+            position: absolute;
+            left: 5%;
+            top: 10%;
+            font-size: 1.7rem;
+            color: black;
+        }
+
+        /*.account {*/
+        /*    font-size: 1.5rem;*/
+        /*    padding-bottom: 2%;*/
+        /*    outline-style: none;*/
+        /*    border-bottom: none;*/
+        /*}*/
+
+        .password, .account {
+            width: 100%;
+            font-size: 0.8rem;
+            border: none;
+            background: none;
+            padding-bottom: 3%;
+            border-bottom: 2px solid #A6A6A6;
+            color: #A6A6A6;
+        }
+
+        .account:focus, .password:focus {
+            outline-style: none;
+            border-bottom: 1px solid #000000;
+            color: #000000;
+        }
+
+        .password {
+            padding-right: 25%;
+        }
+
+        .forget {
+            box-sizing: border-box;
+            text-align: center;
+            font-size: 0.8rem;
+            margin-left: -20%;
+            width: 25%;
+        }
+
+        .pwd_content {
+            margin-top: 10%;
             display: flex;
         }
 
-        .content {
-            height: 75%;
+        .submit {
+            color: #FFFFFF;
+            background-color: #FC9DBF;
+            border: 0px;
+            border-radius: 20px;
+            outline-style: none;
+            font-size: 1rem;
+            margin-top: 25%;
             width: 100%;
+            padding: 2%;
+        }
+
+        .quick {
+            margin-top: 3%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .verification_code, .register {
+            font-size: 0.8rem;
+            color: #4294ff;
         }
 
         .bottom {
-            height: 15%;
+            box-sizing: border-box;
+            height: 20%;
             width: 100%;
         }
 
-        .title_text {
-            align-self: center;
-            vertical-align: middle;
-            font-size: 2em;
-            margin-left: 5%;
+        .bottom-title {
+            margin: 0;
+            padding: 0;
+            height: 15%;
+            text-align: center;
+            width: 100%;
+            font-size: 0.8rem;
+            color: #A6A6A6;
+        }
+
+        img {
+            width: 7%;
+            padding: 2%;
+            border: 1px solid #A6A6A6;
+            border-radius: 50%;
+        }
+
+        .dl {
+            height: 85%;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-around;
         }
 
     </style>
 </head>
 <body>
 <header class="header_title">
-    <b class="title_text">登录</b>
+    <img class="ret" src="../../img/ret.png">
+    <p class="page_name">登录</p>
 </header>
-<div class="content"></div>
-<footer class="bottom"></footer>
+<div class="content">
+    <form>
+        <input class="account" type="text" placeholder="手机号/用户名/邮箱">
+        <div class="pwd_content">
+            <input class="password" type="password" placeholder="请输入密码">
+            <label class="forget">忘记密码</label>
+        </div>
+        <input class="submit" type="button" value="登录">
+    </form>
+    <div class="quick">
+        <a href="#" class="verification_code">验证码登录</a>
+        <a href="#" class="register">新用户注册</a>
+    </div>
+</div>
+<footer class="bottom">
+    <p class="bottom-title">———— 选择其他登录方式 ————</p>
+    <nav class="dl">
+        <img src="../../img/wx.png">
+        <img src="../../img/wb.png">
+        <img src="../../img/qq.png">
+    </nav>
+</footer>
 </body>
 </html>
