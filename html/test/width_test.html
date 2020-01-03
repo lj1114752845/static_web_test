@@ -2,13 +2,17 @@
 <html lang="ch">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-    <title>width</title>
     <script>
         const a = (window.screen.width / 320 * 10).toFixed(4);
         document.documentElement.style.fontSize = a.toString() + 'px';
+        let meta = document.createElement('meta');
+        let pro = meta.prototype;
+        pro.name = "viewport";
+        pro.content = "width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover";
+        document.head.appendChild(meta);
     </script>
+
+    <title>width</title>
     <style>
         html, body {
             margin: 0px;
@@ -41,7 +45,13 @@
 
         .cs {
             background-color: black;
-            width: 10rem;
+            width: 16rem;
+            height: 100px;
+        }
+
+        .cs2 {
+            background-color: #00ff0d;
+            width: 16rem;
             height: 100px;
         }
     </style>
@@ -54,7 +64,10 @@
     <div class="p1"></div>
     <div class="p2"></div>
 </div>
-<div class="cs"></div>
+<div class="item">
+    <div class="cs"></div>
+    <div class="cs2"></div>
+</div>
 <button onclick="te()">点我</button>
 </body>
 </html>
