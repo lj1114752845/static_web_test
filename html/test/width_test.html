@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>width</title>
+    <script>
+        const a = (window.screen.width / 320 * 10).toFixed(4);
+        document.documentElement.style.fontSize = a.toString() + 'px';
+    </script>
+    <style>
+        html, body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .w {
+            width: 393px;
+            height: 100px;
+            background-color: #4294ff;
+            color: #db32ff;
+        }
+
+        .item {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .p1 {
+            width: 196px;
+            height: 100px;
+            background-color: #05fffd;
+        }
+
+        .p2 {
+            width: 197px;
+            height: 100px;
+            background-color: #db32ff;
+        }
+
+        .cs {
+            background-color: black;
+            width: 10rem;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<div id="content" class="w">
+
+</div>
+<div class="item">
+    <div class="p1"></div>
+    <div class="p2"></div>
+</div>
+<div class="cs"></div>
+<button onclick="te()">点我</button>
+</body>
+</html>
+
+<script>
+    function te() {
+        let s = document.documentElement.style.fontSize;
+        alert(s)
+    }
+
+    document.getElementById('content').innerText = window.screen.width + '  ' + window.screen.height;
+</script>

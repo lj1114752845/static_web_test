@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ch">
 <head>
     <meta charset="UTF-8">
     <title>JS</title>
@@ -31,13 +31,90 @@
             window.alert(timeStr);
             console.log(Math.max(1, 2, 3))
         }
+
+        const Student = {
+            createNew: function (name, age, sex) {
+                const student = {};
+                student.name = name;
+                student.age = age;
+                student.sex = sex;
+                student.getInfo = function () {
+                    return name + '  ' + age + '  ' + sex;
+                }
+
+                return student;
+            }
+        }
+
+        function createTable() {
+            const tableContent = document.getElementById('table_content');
+            tableContent.innerHTML = '';
+            let stu1 = Student.createNew('小白', 12, '男');
+            let stu2 = Student.createNew('小黑', 15, '男');
+            let stu3 = Student.createNew('小画', 12, '女');
+            let stu4 = Student.createNew('小鬼', 18, '女');
+            let stu5 = Student.createNew('小绿', 14, '女');
+            let students = [stu1, stu2, stu3, stu4, stu5];
+            for (let index in students) {
+                let stu = students[index];
+                tableContent.append(createTr(stu));
+            }
+        }
+
+        function createTr(student) {
+            const tr = document.createElement('tr');
+            tr.className = 'hang';
+            for (let key in student) {
+                let val = student[key];
+                if (typeof val == "function") {
+                    continue;
+                }
+                tr.appendChild(createTd(val));
+            }
+            return tr;
+        }
+
+        function createTd(value) {
+            const td = document.createElement('td');
+            td.className = 'lie';
+            td.innerText = value;
+            return td;
+        }
     </script>
+    <style>
+        .hang, .b, .lie {
+            margin-top: 10px;
+            border: 1px solid #955fff;
+            border-collapse: collapse;
+            color: #4294ff;
+        }
+
+        .b {
+            width: 30%;
+            text-align: center; /*设置字体水平居中*/
+            vertical-align: center; /*设置水平居中*/
+        }
+    </style>
 </head>
 <body>
 <div>
     <h1>JS输出</h1>
     <button id="btn" onclick="showTime()">点击我显示时间</button>
     <p id="time">当前时间</p>
+    <button id="btn2" onclick="createTable()">添加列表数据</button>
+    <br>
+    <table class="b">
+        <thead>
+        <tr>
+            <td>姓名</td>
+            <td>年龄</td>
+            <td>性别</td>
+        </tr>
+        </thead>
+        <tbody id="table_content">
+
+        </tbody>
+    </table>
 </div>
 </body>
 </html>
